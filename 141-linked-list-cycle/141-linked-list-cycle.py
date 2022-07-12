@@ -8,17 +8,17 @@ class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow = fast = head
         
+        # two pointer approach
+        
         while fast and fast.next:
             slow = slow.next
-            fast = fast.next.next
+            fast = fast.next.next 
             if slow == fast:
                 return True
         return False
         
     
-        
-        
-        
+           # Normal approach
         
 #         if head is None:
 #             return False
