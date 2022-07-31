@@ -12,5 +12,6 @@ class Solution:
         while l1!=l2:
             l1=l1.next if l1 else headB
             l2=l2.next if l2 else headA
+         # Return any dummy pointer. i.e. If any intersection node is present it'll get returned else it will return None because at the end of iteration both dummy pointers will point to NULL.
         return l1
         
